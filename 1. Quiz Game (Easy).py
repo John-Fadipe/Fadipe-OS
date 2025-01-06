@@ -53,7 +53,7 @@ def main():
         elif prompt_1 == "Y":
             print("\nWelcome to the game!")
             questions()
-            
+
             while True:
                 replay=input("Would you like to play again(Y/N): ").upper()
                 if replay == "N":
@@ -62,6 +62,8 @@ def main():
                     break
                 elif replay == "Y":
                     print("\nRestarting the game...\n")
+                    questions()
+                    continue
                 else:
                     print("\nPlease enter Y or N\n")
                     continue
@@ -70,4 +72,4 @@ def main():
             print("\nPlease enter Y or N")
 
 if __name__=="__main__":
-    main() 
+    main()
