@@ -6,7 +6,6 @@ print("Welcome to a Computer Quiz Game")
 print("*************************")
 
 def questions():
-
     score=0
     question_1 = input("1. What does CPU stand for? ").lower()
     if question_1 == "central processing unit":
@@ -45,7 +44,6 @@ def questions():
     print("Thank you for playing!")
 
 def main():
-
     is_running=True
     
     while is_running:
@@ -74,4 +72,4 @@ def main():
             print("\nPlease enter Y or N")
 
 if __name__=="__main__":
-    main()
+    main() 
