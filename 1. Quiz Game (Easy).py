@@ -1,5 +1,4 @@
 #Python Quiz Game
-#Help! I couldn't get the program to reprompt the user to enter a valid input "Y" or "N" on the internal loop, so I decided to break it
 
 print("*************************")
 print("Welcome to a Computer Quiz Game")
@@ -53,9 +52,9 @@ def main():
             is_running=False
         elif prompt_1 == "Y":
             print("\nWelcome to the game!")
-
+            questions()
+            
             while True:
-                questions()
                 replay=input("Would you like to play again(Y/N): ").upper()
                 if replay == "N":
                     print("\nThank you, exiting the game")
@@ -65,8 +64,7 @@ def main():
                     print("\nRestarting the game...\n")
                 else:
                     print("\nInvalid input, exiting the game\n")
-                    is_running=False
-                    break
+                    continue
                 
         else:
             print("\nPlease enter Y or N")
