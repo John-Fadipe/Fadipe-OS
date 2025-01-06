@@ -63,7 +63,7 @@ def main():
                 elif replay == "Y":
                     print("\nRestarting the game...\n")
                 else:
-                    print("\nInvalid input, exiting the game\n")
+                    print("\nPlease enter Y or N\n")
                     continue
                 
         else:
