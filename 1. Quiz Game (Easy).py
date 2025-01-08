@@ -2,7 +2,7 @@
 
 class Quiz_Game:
     def __init__(self):
-        self.score=None
+        self.score=0
         
     def questions(self):
         self.score=0
